@@ -31,6 +31,14 @@ tmux_conf_new_session_prompt=false
 #   - disabled (do not modify new-session bindings)
 tmux_conf_new_session_retain_current_path=false
 
+# automatically set session name to the prevailing dirname across windows:
+# name updates when windows are created, moved, or closed; not on cd within
+# a pane (there is no tmux hook for directory changes inside a running pane)
+#   - true
+#   - false (default)
+#   - disabled (do not set or clear window-linked / window-unlinked hooks)
+tmux_conf_new_session_auto_name=false
+
 
 # -- windows & pane creation ---------------------------------------------------
 
